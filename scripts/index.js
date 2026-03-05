@@ -48,7 +48,7 @@ const Word = (words) => {
             <p class="font-bold">Meaning /Pronounciation</p>
             <h2 class="font-bangla font-bold">"${wordd.meaning ? wordd.meaning : "not found"} / ${wordd.pronunciation ? wordd.pronunciation : "not found"}"</h2>
             <div class="flex justify-between items-center">
-                <button class="btn hover:bg-primary"><i class="fa-solid fa-circle-info"></i></button>
+                <button onclick="my_modal_5.showModal()" class="btn hover:bg-primary"><i class="fa-solid fa-circle-info"></i></button>
                 <button class="btn hover:bg-primary"><i class="fa-solid fa-volume-high"></i></button>
             </div>
 
