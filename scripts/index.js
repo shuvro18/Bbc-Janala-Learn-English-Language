@@ -4,11 +4,22 @@ const fetchFn = () => {
     .then((json) => loadData(json.data));
 };
 
+const removeColor = () =>{
+  const find = document.querySelectorAll(".color-button");
+  find.forEach(color=> color.classList.remove("active"))
+}
+
+
 const lessonFn = (word) => {
   const url = `https://openapi.programming-hero.com/api/level/${word}`;
   fetch(url)
     .then((res) => res.json())
-    .then((data) => Word(data.data));
+    .then((data) => {
+      removeColor()
+      const findLessonButton = document.getElementById(`lesson-button${word}`);
+      findLessonButton.classList.add("active")
+      Word(data.data)
+    });
 };
 
 // {
@@ -55,7 +66,7 @@ const loadData = (lessons) => {
   lessons.forEach((lesson) => {
     const div = document.createElement("div");
     div.innerHTML = ` 
-        <button onclick="lessonFn(${lesson.level_no})" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i><span>Lesson -${lesson.level_no}</span></button>
+        <button id="lesson-button${lesson.level_no}" onclick="lessonFn(${lesson.level_no})" class="btn btn-outline btn-primary color-button"><i class="fa-solid fa-book-open"></i><span>Lesson -${lesson.level_no}</span></button>
 
         `;
 
