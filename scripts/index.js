@@ -21,14 +21,21 @@ const lessonFn = (word) => {
 
 const Word = (words) => {
   const wordContainer = document.getElementById("word-container");
-    wordContainer.innerHTML = "";
+  wordContainer.innerHTML = "";
+  if (words.length === 0) {
+    wordContainer.innerHTML = `<div class="text-center col-span-full space-y-4">
+            <img class="mx-auto" src="./assets/alert-error.png">
+            <p class="text-gray-400">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+            <h2 class="font-semibold text-3xl">নেক্সট Lesson এ যান।</h2>
+        </div>`;
+  }
   words.forEach((wordd) => {
     const createElement = document.createElement("div");
     createElement.innerHTML = `
             <div class="bg-white p-5 space-y-7 rounded-md text-center">
-            <h3 class="font-bold text-2xl">${wordd.word}</h3>
+            <h3 class="font-bold text-2xl">${wordd.word ?wordd.word: "not found"}</h3>
             <p class="font-bold">Meaning /Pronounciation</p>
-            <h2 class="font-bangla font-bold">"${wordd.meaning} / ${wordd.pronunciation}"</h2>
+            <h2 class="font-bangla font-bold">"${wordd.meaning ? wordd.meaning : "not found"} / ${wordd.pronunciation ? wordd.pronunciation : "not found"}"</h2>
             <div class="flex justify-between items-center">
                 <button class="btn hover:bg-primary"><i class="fa-solid fa-circle-info"></i></button>
                 <button class="btn hover:bg-primary"><i class="fa-solid fa-volume-high"></i></button>
@@ -38,7 +45,7 @@ const Word = (words) => {
     
     `;
 
-    wordContainer.append(createElement)
+    wordContainer.append(createElement);
   });
 };
 
