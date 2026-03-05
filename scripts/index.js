@@ -15,6 +15,7 @@ const removeColor = () => {
 };
 
 const lessonFn = (word) => {
+  manageSpinner(true)
   const url = `https://openapi.programming-hero.com/api/level/${word}`;
   fetch(url)
     .then((res) => res.json())
@@ -25,6 +26,17 @@ const lessonFn = (word) => {
       Word(data.data);
     });
 };
+
+const manageSpinner = (status) =>{
+  if(status=== true){
+    document.getElementById("spinner").classList.remove("hidden");
+    document.getElementById("word-container").classList.add("hidden");
+  }else{
+    document.getElementById("word-container").classList.remove("hidden");
+    document.getElementById("spinner").classList.add("hidden");
+  }
+}
+
 
 // {
 //     "id": 76,
@@ -82,6 +94,7 @@ const showModals = (modal) => {
 };
 
 const Word = (words) => {
+
   const wordContainer = document.getElementById("word-container");
   wordContainer.innerHTML = "";
   if (words.length === 0) {
@@ -90,6 +103,10 @@ const Word = (words) => {
             <p class="text-gray-400">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
             <h2 class="font-semibold text-3xl">নেক্সট Lesson এ যান।</h2>
         </div>`;
+
+        manageSpinner(false)
+
+        return
   }
 
   words.forEach((wordd) => {
@@ -106,10 +123,12 @@ const Word = (words) => {
 
         </div>
     
-    `;
+        `;
 
     wordContainer.append(createElement);
+
   });
+  manageSpinner(false)
 };
 
 const loadData = (lessons) => {
