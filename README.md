@@ -1,38 +1,9 @@
-# 🌍 BBC-JANALA LEARN ENGLISH
+##github : shuvro18 
+<br>
+repo link : https://github.com/shuvro18/Bbc-Janala-Learn-English-Language
+<br>
+live link : https://shuvro18.github.io/Bbc-Janala-Learn-English-Language/
 
-An interactive web application designed to help users learn English vocabulary effectively. This project allows users to explore different lessons, understand word meanings, listen to correct pronunciations, and view synonyms through a user-friendly interface.
-
-## 🚀 Features
-
-* **Lesson-Based Learning**: Users can select specific lessons to study organized sets of vocabulary.
-* **Dynamic Search**: Includes a functional search bar to find specific words across the database.
-* **Audio Pronunciation**: Each word comes with a text-to-speech feature, allowing users to hear the correct English pronunciation by clicking the volume icon.
-* **Detailed Word Info (Modal)**: Clicking the info icon opens a modal window displaying the word's meaning, synonyms, and example sentences.
-* **Responsive Design**: Built with Tailwind CSS and DaisyUI, ensuring the application looks great on both mobile and desktop devices.
-* **Loading Indicators**: Uses a spinner to provide visual feedback while fetching data from the API.
-
-## 🛠 Technologies Used
-
-* **HTML5**: For the core structure and layout of the application.
-* **Tailwind CSS & DaisyUI**: For modern, utility-first styling and interactive UI components.
-* **JavaScript (ES6+)**: Handles API integration, dynamic DOM updates, and application logic.
-* **Fetch API**: Used to retrieve lesson and word data from external programming-hero APIs.
-* **SpeechSynthesis API**: Utilized for the "Pronounce Word" feature.
-
-## 📂 File Structure
-
-```text
-├── index.html        # Main entry point and UI structure
-├── style.css         # Custom CSS and font configurations
-├── index.js          # Core JavaScript logic and API handling
-└── assets/           # Icons and images (if applicable)
-```
-
-
-Gemini said
-অবশ্যই, এখন থেকে আমি আপনার জন্য সব README.md ফাইল ইংরেজি ভাষাতেই লিখে দেব। আপনার BBC-JANALA LEARN ENGLISH প্রজেক্টের জন্য ইংরেজি ভাষায় তৈরি README ফাইলটি নিচে দেওয়া হলো:
-
-Markdown
 # 🌍 BBC-JANALA LEARN ENGLISH
 
 An interactive web application designed to help users learn English vocabulary effectively. This project allows users to explore different lessons, understand word meanings, listen to correct pronunciations, and view synonyms through a user-friendly interface.
