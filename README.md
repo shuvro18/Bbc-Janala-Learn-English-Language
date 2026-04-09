@@ -1,29 +1,95 @@
-# 📋 Job Application Tracker
+# 🌍 BBC-JANALA LEARN ENGLISH
 
-A simple and efficient web application designed to help users track the status of their job applications. This project demonstrates core concepts of JavaScript DOM manipulation, event handling, and dynamic UI updates.
+An interactive web application designed to help users learn English vocabulary effectively. This project allows users to explore different lessons, understand word meanings, listen to correct pronunciations, and view synonyms through a user-friendly interface.
 
 ## 🚀 Features
 
-* **Job Status Updates**: Users can easily update the status of any job to 'Interview' or 'Rejected' by clicking the respective buttons.
-* **Dynamic Filtering**: Features a filtering system to view jobs by categories: 'All', 'Interview', and 'Rejected'.
-* **Real-time Counters**: The application automatically calculates and displays the total number of jobs and the count for each specific category.
-* **Delete Functionality**: Includes the ability to remove job applications from the tracker entirely using a delete button.
-* **Empty State Handling**: Displays a "No jobs available" message and illustration when a filtered category contains no data.
-* **Modern UI/UX**: Built with a clean, responsive interface using Tailwind CSS and DaisyUI components.
+* **Lesson-Based Learning**: Users can select specific lessons to study organized sets of vocabulary.
+* **Dynamic Search**: Includes a functional search bar to find specific words across the database.
+* **Audio Pronunciation**: Each word comes with a text-to-speech feature, allowing users to hear the correct English pronunciation by clicking the volume icon.
+* **Detailed Word Info (Modal)**: Clicking the info icon opens a modal window displaying the word's meaning, synonyms, and example sentences.
+* **Responsive Design**: Built with Tailwind CSS and DaisyUI, ensuring the application looks great on both mobile and desktop devices.
+* **Loading Indicators**: Uses a spinner to provide visual feedback while fetching data from the API.
 
 ## 🛠 Technologies Used
 
-* **HTML5**: Used for structuring the application.
-* **Tailwind CSS & DaisyUI**: Utilized for modern, responsive styling and pre-built UI components.
-* **JavaScript (ES6+)**: Handles the application logic, array management, and DOM updates.
-* **Font Awesome**: Integrated for scalable vector icons.
-* **Google Fonts (Geist)**: Used for professional typography.
+* **HTML5**: For the core structure and layout of the application.
+* **Tailwind CSS & DaisyUI**: For modern, utility-first styling and interactive UI components.
+* **JavaScript (ES6+)**: Handles API integration, dynamic DOM updates, and application logic.
+* **Fetch API**: Used to retrieve lesson and word data from external programming-hero APIs.
+* **SpeechSynthesis API**: Utilized for the "Pronounce Word" feature.
 
 ## 📂 File Structure
 
 ```text
-├── index.html    # Main HTML structure and layout
-├── script.js     # Core application logic and interaction
-├── jobs.png      # Image used for empty state notification
-└── README.md     # Project documentation
+├── index.html        # Main entry point and UI structure
+├── style.css         # Custom CSS and font configurations
+├── index.js          # Core JavaScript logic and API handling
+└── assets/           # Icons and images (if applicable)
 ```
+
+
+Gemini said
+অবশ্যই, এখন থেকে আমি আপনার জন্য সব README.md ফাইল ইংরেজি ভাষাতেই লিখে দেব। আপনার BBC-JANALA LEARN ENGLISH প্রজেক্টের জন্য ইংরেজি ভাষায় তৈরি README ফাইলটি নিচে দেওয়া হলো:
+
+Markdown
+# 🌍 BBC-JANALA LEARN ENGLISH
+
+An interactive web application designed to help users learn English vocabulary effectively. This project allows users to explore different lessons, understand word meanings, listen to correct pronunciations, and view synonyms through a user-friendly interface.
+
+## 🚀 Features
+
+* **Lesson-Based Learning**: Users can select specific lessons to study organized sets of vocabulary.
+* **Dynamic Search**: Includes a functional search bar to find specific words across the database.
+* **Audio Pronunciation**: Each word comes with a text-to-speech feature, allowing users to hear the correct English pronunciation by clicking the volume icon.
+* **Detailed Word Info (Modal)**: Clicking the info icon opens a modal window displaying the word's meaning, synonyms, and example sentences.
+* **Responsive Design**: Built with Tailwind CSS and DaisyUI, ensuring the application looks great on both mobile and desktop devices.
+* **Loading Indicators**: Uses a spinner to provide visual feedback while fetching data from the API.
+
+## 🛠 Technologies Used
+
+* **HTML5**: For the core structure and layout of the application.
+* **Tailwind CSS & DaisyUI**: For modern, utility-first styling and interactive UI components.
+* **JavaScript (ES6+)**: Handles API integration, dynamic DOM updates, and application logic.
+* **Fetch API**: Used to retrieve lesson and word data from external programming-hero APIs.
+* **SpeechSynthesis API**: Utilized for the "Pronounce Word" feature.
+
+## 📂 File Structure
+
+```text
+├── index.html        # Main entry point and UI structure
+├── style.css         # Custom CSS and font configurations
+├── index.js          # Core JavaScript logic and API handling
+└── assets/           # Icons and images (if applicable)
+```
+⚙️ How It Works
+Data Fetching: The app fetches all available levels from the API upon loading.
+
+Interaction: When a user clicks a "Lesson" button, the app retrieves all words associated with that level and displays them as cards.
+
+Search Logic: The search function filters through the API data to return matching words.
+
+UI Feedback: Buttons toggle an "active" class to highlight the current selection, and modals provide deeper context for each word.
+
+
+
+🛠 Installation
+To run this project locally:
+
+1. Clone the repository:
+```Bash
+git clone [https://github.com/your-username/bbc-janala-english.git](https://github.com/your-username/bbc-janala-english.git)
+```
+
+2. Navigate to the project directory:
+   ```Bash
+   cd bbc-janala-english
+   ```
+
+3. Open index.html in your favorite web browser.
+
+
+
+<img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/5a8123e2-e769-4315-a756-2049ec38260a" />
+<img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/98f14def-57f2-4f3e-a044-830780a65f79" />
+<img width="1906" height="910" alt="image" src="https://github.com/user-attachments/assets/d66c3c03-e101-474c-ae4f-16eba274a2fd" />
