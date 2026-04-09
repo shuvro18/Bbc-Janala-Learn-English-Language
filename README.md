@@ -26,3 +26,4 @@ A simple and efficient web application designed to help users track the status o
 ├── script.js     # Core application logic and interaction
 ├── jobs.png      # Image used for empty state notification
 └── README.md     # Project documentation
+```
